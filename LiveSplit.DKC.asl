@@ -225,7 +225,7 @@ split
     // split when we here the level completion music
     // or wehen we here the boss battle win music
     // but not on completing a bonus level challenge
-    var MapWinMusicPlaying = settings["kremcoins"] && vars.watchers["MusicTrack"].Old != vars.musicIDs["winOnMap"] && vars.watchers["MusicTrack"].Current == vars.musicIDs["winOnMap"];
+    var MapWinMusicPlaying = settings["SplitAtEveryLevel"] && vars.watchers["MusicTrack"].Old != vars.musicIDs["winOnMap"] && vars.watchers["MusicTrack"].Current == vars.musicIDs["winOnMap"];
     var BossWinMusicPlaying = vars.watchers["MusicTrack"].Current == vars.musicIDs["winOnBoss"]; 
     if (BossWinMusicPlaying) {
 	    // BossWinMusicPlaying is the same music for bonus levels and bosses
